@@ -1,0 +1,17 @@
+<div class="toolbar">
+    <h1 id="pageTitle">Gidi good</h2>
+        <a id="backButton" class="button" ng-tap="$navigate.back()">Back</a>
+</div>
+<div data-ng-controller="MonkeyCtrl">
+	<div id="monkeypic">	
+		<img data-ng-src="{{curImage.image}}" alt="{{curImage.teur}}">
+	</div>
+	<div id="wrapper">
+		<ul id="moList">
+			<li data-ng-repeat= "image in images"  ng-click="SetCurImage(image)">
+				<img data-ng-src="{{image.kotar}}" alt="{{image.teur}}">
+			</li>
+		</ul>
+	</div>	
+
+</div>

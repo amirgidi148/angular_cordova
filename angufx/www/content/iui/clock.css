@@ -1,0 +1,218 @@
+	/* This animate the background colors of the clock*/
+
+		@-webkit-keyframes color_change {
+		  0% { background-color: lawngreen; }
+		  50% { background-color: yellow; }
+		  100% { background-color: red; }
+
+		}
+
+ .clockbutton{
+  position:relative;
+  display:inline-block;
+  margin:8px;
+}
+
+.clockbutton a{
+  color:blue;
+  font-family:Helvetica, sans-serif;
+  font-weight:bold;
+  font-size:15px;
+  text-align: center;
+  text-decoration:none;
+  background-color:#FFA12B;
+  display:block;
+  position:relative;
+  padding:5px 10px;
+  
+  -webkit-tap-highlight-color: blue;
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  box-shadow:inset 0 1px 0 #FFE5C4, 0 10px 0 #915100;
+  
+  -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.clockbutton a:active{
+  top:10px;
+  background-color:#F78966;
+  
+  -webkit-box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+    box-shadow:inset 0 1px 0 #FFE5C4, inset 0 -3px 0 #915100;
+}
+
+
+.clockbutton:after{
+  content:"";
+  height:100%;
+  width:100%;
+  padding:4px;
+  position: absolute;
+  bottom:-15px;
+  left:-4px;
+  z-index:-1;
+  background-color:#2B1800;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+		.colorclock {
+		    background-color: lawngreen;
+		    border: 5px solid green;
+		    border-radius: 200px;
+		    width: 200px;
+		    height: 200px;
+		    -webkit-animation: color_change 2s infinite alternate;   
+		}
+
+	/* This animate the clock himself */
+		.clock {
+			width: 200px;
+			height: 200px;
+			margin: auto;
+			background-color: transparent;
+			border-radius: 50%;
+			padding: 5px;
+			position: relative;
+			top: 50%;
+			margin-top: -100px;
+		}
+		.hand {
+			position: absolute;
+		} 
+		
+		.sec-hand {
+			width: 10px;
+			height: 82px;
+			margin-top: -80px;
+			background-color: black;
+			border-radius: 20%;
+			left: 50%;
+			margin-left: -1px;
+			top: 50%;
+			z-index: 1;
+			-webkit-transform-origin: 3px 100%;
+		}
+		/* this create the movement of the clock */
+
+		 .hand[data-sec="0"]  { -webkit-transform: rotate(0deg); }
+		 .hand[data-sec="1"]  { -webkit-transform: rotate(4deg); }
+		 .hand[data-sec="2"]  { -webkit-transform: rotate(8deg); }
+		 .hand[data-sec="3"]  { -webkit-transform: rotate(12deg); }
+		 .hand[data-sec="4"]  { -webkit-transform: rotate(16deg); }
+		 .hand[data-sec="5"]  { -webkit-transform: rotate(20deg); }
+		 .hand[data-sec="6"]  { -webkit-transform: rotate(24deg); }
+		 .hand[data-sec="7"]  { -webkit-transform: rotate(28deg); }
+		 .hand[data-sec="8"]  { -webkit-transform: rotate(32deg); }
+		 .hand[data-sec="9"]  { -webkit-transform: rotate(36deg); }
+		 .hand[data-sec="10"] { -webkit-transform: rotate(40deg); }
+		 .hand[data-sec="11"] { -webkit-transform: rotate(44deg); }
+		 .hand[data-sec="12"] { -webkit-transform: rotate(48deg); }
+		 .hand[data-sec="13"] { -webkit-transform: rotate(52deg); }
+		 .hand[data-sec="14"] { -webkit-transform: rotate(56deg); }
+		 .hand[data-sec="15"] { -webkit-transform: rotate(60deg); }
+		 .hand[data-sec="16"] { -webkit-transform: rotate(64deg); }
+		 .hand[data-sec="17"] { -webkit-transform: rotate(68deg); }
+		 .hand[data-sec="18"] { -webkit-transform: rotate(72deg); }
+		 .hand[data-sec="19"] { -webkit-transform: rotate(76deg); }
+		 .hand[data-sec="20"] { -webkit-transform: rotate(80deg); }
+		 .hand[data-sec="21"] { -webkit-transform: rotate(84deg); }
+		 .hand[data-sec="22"] { -webkit-transform: rotate(88deg); }
+		 .hand[data-sec="23"] { -webkit-transform: rotate(92deg); }
+		 .hand[data-sec="24"] { -webkit-transform: rotate(96deg); }
+		 .hand[data-sec="25"] { -webkit-transform: rotate(100deg); }
+		 .hand[data-sec="26"] { -webkit-transform: rotate(104deg); }
+		 .hand[data-sec="27"] { -webkit-transform: rotate(108deg); }
+		 .hand[data-sec="28"] { -webkit-transform: rotate(112deg); }
+		 .hand[data-sec="29"] { -webkit-transform: rotate(116deg); }
+		 .hand[data-sec="30"] { -webkit-transform: rotate(120deg); }
+		 .hand[data-sec="31"] { -webkit-transform: rotate(124deg); }
+		 .hand[data-sec="32"] { -webkit-transform: rotate(128deg); }
+		 .hand[data-sec="33"] { -webkit-transform: rotate(132deg); }
+		 .hand[data-sec="34"] { -webkit-transform: rotate(136deg); }
+		 .hand[data-sec="35"] { -webkit-transform: rotate(140deg); }
+		 .hand[data-sec="36"] { -webkit-transform: rotate(144deg); }
+		 .hand[data-sec="37"] { -webkit-transform: rotate(148deg); }
+		 .hand[data-sec="38"] { -webkit-transform: rotate(152deg); }
+		 .hand[data-sec="39"] { -webkit-transform: rotate(156deg); }
+		 .hand[data-sec="40"] { -webkit-transform: rotate(160deg); }
+		 .hand[data-sec="41"] { -webkit-transform: rotate(164deg); }
+		 .hand[data-sec="42"] { -webkit-transform: rotate(168deg); }
+		 .hand[data-sec="43"] { -webkit-transform: rotate(172deg); }
+		 .hand[data-sec="44"] { -webkit-transform: rotate(176deg); }
+		 .hand[data-sec="45"] { -webkit-transform: rotate(180deg); }
+		 .hand[data-sec="46"] { -webkit-transform: rotate(184deg); }
+		 .hand[data-sec="47"] { -webkit-transform: rotate(188deg); }
+		 .hand[data-sec="48"] { -webkit-transform: rotate(192deg); }
+		 .hand[data-sec="49"] { -webkit-transform: rotate(196deg); }
+		 .hand[data-sec="50"] { -webkit-transform: rotate(200deg); }
+	 	 .hand[data-sec="51"] { -webkit-transform: rotate(204deg); }
+		 .hand[data-sec="52"] { -webkit-transform: rotate(208deg); }
+		 .hand[data-sec="53"] { -webkit-transform: rotate(212deg); }
+		 .hand[data-sec="54"] { -webkit-transform: rotate(216deg); }
+		 .hand[data-sec="55"] { -webkit-transform: rotate(220deg); }
+		 .hand[data-sec="56"] { -webkit-transform: rotate(224deg); }
+		 .hand[data-sec="57"] { -webkit-transform: rotate(228deg); }
+		 .hand[data-sec="58"] { -webkit-transform: rotate(232deg); }
+		 .hand[data-sec="59"] { -webkit-transform: rotate(236deg); }
+		 .hand[data-sec="60"] { -webkit-transform: rotate(240deg); }
+		 .hand[data-sec="61"] { -webkit-transform: rotate(244deg); }
+		 .hand[data-sec="62"] { -webkit-transform: rotate(248deg); }
+		 .hand[data-sec="63"] { -webkit-transform: rotate(252deg); }
+		 .hand[data-sec="64"] { -webkit-transform: rotate(256deg); }
+		 .hand[data-sec="65"] { -webkit-transform: rotate(260deg); }
+		 .hand[data-sec="66"] { -webkit-transform: rotate(264deg); }
+		 .hand[data-sec="67"] { -webkit-transform: rotate(268deg); }
+		 .hand[data-sec="68"] { -webkit-transform: rotate(272deg); }
+		 .hand[data-sec="69"] { -webkit-transform: rotate(276deg); }
+		 .hand[data-sec="70"] { -webkit-transform: rotate(280deg); }
+		 .hand[data-sec="71"] { -webkit-transform: rotate(284deg); }
+		 .hand[data-sec="72"] { -webkit-transform: rotate(288deg); }
+		 .hand[data-sec="73"] { -webkit-transform: rotate(292deg); }
+		 .hand[data-sec="74"] { -webkit-transform: rotate(296deg); }
+		 .hand[data-sec="75"] { -webkit-transform: rotate(300deg); }
+		 .hand[data-sec="76"] { -webkit-transform: rotate(304deg); }
+		 .hand[data-sec="77"] { -webkit-transform: rotate(308deg); }
+		 .hand[data-sec="78"] { -webkit-transform: rotate(312deg); }
+		 .hand[data-sec="79"] { -webkit-transform: rotate(316deg); }
+		 .hand[data-sec="80"] { -webkit-transform: rotate(320deg); }
+		 .hand[data-sec="81"] { -webkit-transform: rotate(324deg); }
+		 .hand[data-sec="82"] { -webkit-transform: rotate(328deg); }
+		 .hand[data-sec="83"] { -webkit-transform: rotate(332deg); }
+		 .hand[data-sec="84"] { -webkit-transform: rotate(336deg); }
+		 .hand[data-sec="85"] { -webkit-transform: rotate(340deg); }
+		 .hand[data-sec="86"] { -webkit-transform: rotate(344deg); }
+		 .hand[data-sec="87"] { -webkit-transform: rotate(348deg); }
+		 .hand[data-sec="88"] { -webkit-transform: rotate(352deg); }
+		 .hand[data-sec="89"] { -webkit-transform: rotate(356deg); }
+		 .hand[data-sec="90"] { -webkit-transform: rotate(360deg); }
+		 
+#ajaxloader2 {
+  margin:30px auto 0;
+}
+ 
+#ajaxloader2 .inner {
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: 5px solid rgba(0, 183, 229, 0.9);
+	opacity: .9;
+	border-radius: 50%;
+	border-left-color: transparent;
+	border-bottom-color: transparent;
+	-webkit-box-shadow: 0 0 35px rgba(0, 61, 76, 0.9);
+	-moz-box-shadow: 0 0 35px rgba(0, 61, 76, 0.9);
+	box-shadow: 0 0 35px rgba(0, 61, 76, 0.9);
+	position: relative;
+	top: -50px;
+	margin: 0 auto;
+	-webkit-animation: spin-right 5s 0 linear infinite normal;
+	-moz-animation: spin-right 5s 0 linear infinite normal;
+	-ms-animation: spin-right 5s 0 linear infinite normal;
+	animation: spin-right 5s 0 linear infinite normal;
+}
+		

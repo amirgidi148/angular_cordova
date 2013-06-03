@@ -1,0 +1,27 @@
+#wrapper {
+	width:500px;
+	overflow:auto;
+}
+#moList {
+	white-space: nowrap;
+	margin: 0px;
+}
+#moList li {
+	display: inline;
+	list-style-type: none;
+	padding-left: 2px;
+	padding-right: 2px;
+	cursor: pointer;
+}
+#moList li:hover {
+	opacity: 0.4;
+}
+#monkeypic { 
+	width: 300px;
+	height: 300px;
+	margin-bottom: 10px;
+}
+#monkeypic img {
+	display: inline;
+	margin: auto;
+}
